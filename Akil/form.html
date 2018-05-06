@@ -1,0 +1,109 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Vineyard | Registration</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <script src="script.js"></script>
+</head>
+<body class="imgb">
+  <header>
+    <div class="container">
+      <div id="branding">
+        <h1><span class="highlight">Vineyard</span></h1>
+      </div>
+    </div>
+  </header>
+
+<div class="container-registration">
+  <form name='registration' onsubmit="return validateForm()">
+
+    <label for="fname"><b>First Name</b></label>
+    <input type="text" id="fname" name="firstname" placeholder="Your name..">
+    <br/>
+
+    <label for="lname"><b>Surname</b></label>
+    <input type="text" id="sname" name="surname" placeholder="Your Surname..">
+    <br/>
+
+    <label for="mobile"><b>Mobile Phone</b></label>
+    <input type="number" id="mobile" name="mobile" placeholder="Your Mobile Phone Number..">
+    <br/>
+
+    <label for="email"><b>Email</b></label>
+    <input type="text" id="email" name="email" placeholder="Your email.." >
+    <br/>
+
+    <label for="nic"><b>NIC</b></label>
+    <input type="text" id="nic" name="nic" placeholder="Your NIC..">
+
+    <label for="wine-type-preference"><b>Wine Type Preference</b></label>
+    <br/>
+
+    <div class="radio">
+    <input type="radio" class="wine" name="wine-type-preference" id="red" value="red">
+    <label class="radio-label" for="red">Red</label>
+    </div>
+
+    <div class="radio">
+    <input type="radio" class="wine" name="wine-type-preference" id="white" value="white">
+    <label class="radio-label" for="white">White</label>
+    </div>
+
+    <div class="radio">
+    <input type="radio" class="wine" name="wine-type-preference" id="rose" value="rose">
+    <label class="radio-label" for="rose">Rosé</label>
+    </div>
+    <br/>
+
+    <label for="sex"><b>Sex</b></label>
+    <br/>
+
+    <div class="radio">
+    <input type="radio" name="gender" id="male" value="male">
+    <label class="radio-label" for="male">Male</label>
+    </div>
+
+    <div class="radio">
+    <input type="radio" name="gender" id="female" value="female">
+    <label class="radio-label" for="female">Female</label>
+    </div>
+    <br/>
+
+
+    <label for="country"><b>Country</b></label>
+    <select id="country" name="country">
+      <option value="mauritius">Mauritius</option>
+      <option value="canada">Canada</option>
+      <option value="usa">USA</option>
+      <option value="australia">Australia</option>
+      <option value="dubai">Dubai</option>
+      <option value="uk">UK</option>
+      <option value="china">China</option>
+      <option value="france">France</option>
+      <option value="brazil">Brazil</option>
+      <option value="mexico">Mexico</option>
+    </select>
+
+    <label for="username"><b>UserName</b></label>
+    <input type="text" id="username" placeholder="Enter UserName" name="username">
+
+    <label for="psw"><b>Password</b></label>
+    <input type="password" id=("psw") placeholder="Enter Password" name="password">
+
+    <br/>
+    <br/>
+
+    <label for="psw-confirm"><b>Confirm Password</b></label>
+    <input type="password" id=("pswconfirm") placeholder="Confirm Password" name="password-confirm">
+
+    <br/>
+
+    <button class="form-button" type="submit" class="registerbtn"><b>Register</b></button>
+    <button class="form-button" type="reset" class="resetbtn"><b>Reset</b></button>
+
+  </form>
+</div>
+
+</body>
+</html>
