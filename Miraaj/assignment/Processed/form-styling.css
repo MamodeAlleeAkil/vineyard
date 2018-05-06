@@ -1,0 +1,81 @@
+body {
+  background-image: url(../Processed/wine.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: block;
+  margin: auto;
+  position: relative; }
+  body .container {
+    padding: 0; }
+  body header {
+    max-width: 1200px;
+    width: 100%;
+    display: block;
+    margin: auto;
+    text-align: center; }
+    body header a {
+      text-decoration: none;
+      padding: 0 20px; }
+  body .wrapper h1 {
+    text-align: center; }
+  body .wrapper form {
+    display: block;
+    margin: auto;
+    max-width: 370px; }
+    body .wrapper form label {
+      display: inline-block;
+      padding: 0 5px;
+      vertical-align: top; }
+    body .wrapper form .wine, body .wrapper form .country, body .wrapper form .sex, body .wrapper form .confirm_password {
+      display: block; }
+    body .wrapper form .buttons {
+      text-align: center;
+      padding: 20px 0; }
+      body .wrapper form .buttons .btn {
+        text-decoration: none;
+        padding: 10px 20px; }
+    body .wrapper form .error {
+      border: 1px solid red; }
+    body .wrapper form .error_message {
+      color: red;
+      display: none; }
+    body .wrapper form .g-recaptcha {
+      display: block;
+      margin: 20px auto;
+      text-align: center;
+      max-width: 302px; }
+  body .overlay {
+    display: none;
+    position: absolute;
+    width: 100%;
+    background-color: black;
+    opacity: 0.5;
+    height: 100%;
+    z-index: 5; }
+  body .popup {
+    display: none;
+    margin: auto;
+    position: fixed;
+    width: 100%;
+    max-width: 500px;
+    background-color: black;
+    opacity: 0.8;
+    height: 230px;
+    z-index: 10;
+    left: calc(50% - 250px);
+    top: 150px; }
+    body .popup .btn {
+      display: block;
+      text-decoration: none;
+      color: black;
+      background-color: blue;
+      padding: 20px;
+      text-align: center;
+      margin: 20px; }
+    body .popup p {
+      color: white;
+      text-align: center;
+      margin: 5px auto 15px auto;
+      display: block; }
+
+/*# sourceMappingURL=form-styling.css.map */

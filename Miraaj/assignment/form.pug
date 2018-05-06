@@ -1,0 +1,80 @@
+head
+  meta(charset='UTF-8')
+  meta(http-equiv='X-UA-Compatible', content='IE=edge')
+  meta(name='viewport', content='width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no')
+  meta(name="format-detection" content="telephone=no")
+  link(href='../Processed/form-styling.css?v=1.0', rel='stylesheet', media='all')
+  script(src=src='https://www.google.com/recaptcha/api.js')
+  block title
+    title Form
+
+
+.container
+  header
+  .overlay
+  .popup
+    p ARE YOU SURE?
+    a.btn.ok(href="#") OK
+    a.btn.cancel(href="#") CANCEL
+  .wrapper
+    h1 Form
+    form.form_credentials(action="")
+      label.first_name
+        p First Name
+        input(type="text")
+        p.error_message This field is incorrect
+      label.surname
+        p Surname
+        input(type="text")
+        p.error_message This field is incorrect
+      label.number
+        p Mobile Phone
+        input(type="text", maxlength="8")
+        p.error_message This field is incorrect
+      label.email
+        p Email Address
+        input(type="text")
+        p.error_message This field is incorrect
+      label.nic
+        p NIC
+        input(type="text", maxlength="14")
+        p.error_message This field is incorrect
+      p.winepref Wine Type Preference
+      label.wine
+        input.red(type='radio', name='wine', value='red' checked='checked')
+        | Red
+        input.white(type='radio', name='wine', value='white')
+        | White
+        input.rose(type='radio', name='wine', value='rosé')
+        | Rosé
+      label.sex
+        p Sex
+        input.male(type='radio', name='gender', value='male', checked='checked')
+        | Male
+        input.female(type='radio', name='gender', value='female')
+        | Female
+      label.country
+        p Country
+        select
+          option(value="Mauritius") Mauritius
+          option(value="Rodrigues") Rodrigues
+      label.username
+        p Username
+        input(type="text")
+        p.error_message This field is incorrect
+      label.password
+        p Password
+        input(type="password")
+        p.error_message This field is incorrect
+      label.confirm_password
+        p Confirm Password
+        input(type="password")
+        p.error_message This field is incorrect
+      .g-recaptcha(data-sitekey='6LcocVcUAAAAAMP80tljIlg1U_kUIoXBhBh_69jA' , data-callback='recaptchaCallback')
+      .buttons
+        a.btn.register(href="#") Register
+        a.btn.reset(href="#") Reset
+
+  footer
+    script(src='https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js')
+    script(src='../Processed/validations.js')

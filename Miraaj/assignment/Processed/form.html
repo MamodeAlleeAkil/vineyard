@@ -1,0 +1,86 @@
+
+<head>
+  <meta charset="UTF-8"/>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"/>
+  <meta name="format-detection" content="telephone=no"/>
+  <link href="../Processed/form-styling.css?v=1.0" rel="stylesheet" media="all"/>
+  <script src="https://www.google.com/recaptcha/api.js"></script>
+  <title>Form</title>
+</head>
+<div class="container">
+  <header></header>
+  <div class="overlay"></div>
+  <div class="popup">
+    <p>ARE YOU SURE?</p><a class="btn ok" href="#">OK</a><a class="btn cancel" href="#">CANCEL</a>
+  </div>
+  <div class="wrapper">
+    <h1>Form</h1>
+    <form class="form_credentials" action="">
+      <label class="first_name">
+        <p>First Name</p>
+        <input type="text"/>
+        <p class="error_message">This field is incorrect</p>
+      </label>
+      <label class="surname">
+        <p>Surname</p>
+        <input type="text"/>
+        <p class="error_message">This field is incorrect</p>
+      </label>
+      <label class="number">
+        <p>Mobile Phone</p>
+        <input type="text" maxlength="8"/>
+        <p class="error_message">This field is incorrect</p>
+      </label>
+      <label class="email">
+        <p>Email Address</p>
+        <input type="text"/>
+        <p class="error_message">This field is incorrect</p>
+      </label>
+      <label class="nic">
+        <p>NIC</p>
+        <input type="text" maxlength="14"/>
+        <p class="error_message">This field is incorrect</p>
+      </label>
+      <p class="winepref">Wine Type Preference</p>
+      <label class="wine">
+        <input class="red" type="radio" name="wine" value="red" checked="checked"/>Red
+        <input class="white" type="radio" name="wine" value="white"/>White
+        <input class="rose" type="radio" name="wine" value="rosé"/>Rosé
+      </label>
+      <label class="sex">
+        <p>Sex</p>
+        <input class="male" type="radio" name="gender" value="male" checked="checked"/>Male
+        <input class="female" type="radio" name="gender" value="female"/>Female
+      </label>
+      <label class="country">
+        <p>Country</p>
+        <select>
+          <option value="Mauritius">Mauritius</option>
+          <option value="Rodrigues">Rodrigues</option>
+        </select>
+      </label>
+      <label class="username">
+        <p>Username</p>
+        <input type="text"/>
+        <p class="error_message">This field is incorrect</p>
+      </label>
+      <label class="password">
+        <p>Password</p>
+        <input type="password"/>
+        <p class="error_message">This field is incorrect</p>
+      </label>
+      <label class="confirm_password">
+        <p>Confirm Password</p>
+        <input type="password"/>
+        <p class="error_message">This field is incorrect</p>
+      </label>
+      <div class="g-recaptcha" data-sitekey="6LcocVcUAAAAAMP80tljIlg1U_kUIoXBhBh_69jA" data-callback="recaptchaCallback"></div>
+      <div class="buttons"><a class="btn register" href="#">Register</a><a class="btn reset" href="#">Reset</a></div>
+    </form>
+  </div>
+  <footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="../Processed/validations.js"></script>
+  </footer>
+</div>
