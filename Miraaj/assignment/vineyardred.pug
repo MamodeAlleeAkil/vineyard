@@ -3,33 +3,42 @@ head
   meta(http-equiv='X-UA-Compatible', content='IE=edge')
   meta(name='viewport', content='width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no')
   meta(name="format-detection" content="telephone=no")
-  link(href='../Processed/form-styling.css?v=1.0', rel='stylesheet', media='all')
-  script(src=src='https://www.google.com/recaptcha/api.js')
+  link(href='../vineyard/css/red-styling.css?v=1.0', rel='stylesheet', media='all')
   block title
     title Vineyardred
 
 .vinyardred
   header
+    a(href="../vineyard/vineyardred.html") Vineyardred
+    a(href="../vineyard/vineyardwhite.html") VineyardWhite
+    a(href="../vineyard/vineyardrose.html") Vinyardrosé
   .wrapper
 
     form
-      label.email
-        p Email Address
-        input(type="text")
+      label.category
+        p Product Category
+        input(type="text", name="red", value="Red", readonly)
 
-      label.email
-        p Email Address
-        input(type="text")
+      label.p-name
+        p Product Name
+        input(type="text", name="product_name", value="Name1", readonly)
 
-      label.email
+      label.p_description
         p Email Address
-        input(type="text")
+        textarea(rows='4', cols='50', name="description",  readonly) Enta palab goes here...
 
-      label.email
-        p Email Address
+      label.unit-price
+        p Unit Price
+        input(type="text", name="price", value="$55", readonly)
+
+      label.quantity
+        p Quantity
         input(type="text")
+      a.btn.red_cart(href="#") Add to cart
+
+      a.btn.red_order(href="#") Place Order
 
 
   footer
     script(src='https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js')
-    script(src='../Processed/validations.js')
+    script(src='../vineyard/js/shopping.js')
