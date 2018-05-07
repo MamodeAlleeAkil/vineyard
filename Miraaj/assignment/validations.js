@@ -41,8 +41,15 @@ $(document).ready(function() {
       $('.username input').next('.error_message').show();
     }
 
+    if($('.number input').val().length<8){
+      $('.number input').addClass('error');
+      $('.number input').next('.error_message').show();
+      hasError = true;
+    }
+
     if(grecaptcha.getResponse().length==0){
       $('.g-recaptcha').addClass('error');
+      hasError = true;
     }
 
     if(hasError == false && grecaptcha.getResponse().length!==0 && $('input[name=wine]:checked').val()=='red'){
