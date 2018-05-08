@@ -13,36 +13,40 @@ head
     a(href="../vineyard/vineyardwhite.html") VineyardWhite
     a(href="../vineyard/vineyardrose.html") Vinyardrosé
   .wrapper
-    section.section-table
+    section#boxes
       .container
-        table#table-info
-          tr.row1
-            th.cell Product Name
+        table.products-table
+          tr
+            th Product Name
             th Description
             th Unit Price
             th Quantity
             th Add to cart
           tr
-            td asdasd
-            td asdasd
-            td asdasd
-            td asdasd
+            td Red Fluo
+            td Best in the Country
+            td 50
             td
-              button +
+              input.quantity(type='number', value='0')
+            td
+              button.add-button.button_1 +
           tr
-            td asdasd
-            td asdasd
-            td asdasd
-            td asdasd
+            td Red dark
+            td not bad in the Country
+            td 89
             td
-              button +
+              input.quantity(type='number', value='0')
+            td
+              button.add-button.button_1 +
           tr
-            td asdasd
-            td asdasd
-            td asdasd
-            td asdasd
+            td Red invisible
+            td quite good the Country
+            td 15
             td
-              button +
+              input.quantity(type='number', value='0')
+            td
+              button.add-button.button_1 +
+      p.demo#demo
 
   footer
     script(src='https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js')

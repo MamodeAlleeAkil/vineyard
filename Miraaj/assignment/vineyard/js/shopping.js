@@ -1,2 +1,2 @@
-$(document).ready(function(){$(".red_cart").click(function(r){var e,t=$(".quantity").val(),a=parseInt($(".unitPrice").val());e=parseInt(t*a),$(".price").val(e);var n=$(".red1 .required").map(function(r){return this.value}).get();alert(t),alert(a),alert(e),alert(n)})});
+$(document).ready(function(){console.warn("first"),$(".products-table").on("click",".add-button",function(){console.warn("second");var t=$(this).closest("tr"),n=t.find("td:eq(0)").text()+"\n"+t.find("td:eq(1)").text()+"\n"+t.find(".quantity").val(),e=[];e.push(n),document.getElementById("demo").innerHTML=e,alert(n)})});
 //# sourceMappingURL=shopping.js.map

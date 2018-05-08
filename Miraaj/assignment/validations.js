@@ -47,6 +47,13 @@ $(document).ready(function() {
       hasError = true;
     }
 
+    if (!$.isNumeric($('.number input').val())){
+      $(this).val('');
+      $('.number input').addClass('error');
+      $('.number input').next('.error_message').show();
+      hasError = true;
+    }
+
     if(grecaptcha.getResponse().length==0){
       $('.g-recaptcha').addClass('error');
       hasError = true;
