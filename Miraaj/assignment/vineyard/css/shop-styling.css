@@ -1,0 +1,19 @@
+.hide {
+  display: none; }
+
+.red {
+  display: block; }
+
+.white {
+  display: none; }
+
+.rose {
+  display: none; }
+
+.cartbox {
+  height: 500px;
+  max-width: 500px;
+  width: 100%;
+  background: red; }
+
+/*# sourceMappingURL=shop-styling.css.map */

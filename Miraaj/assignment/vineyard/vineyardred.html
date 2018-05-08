@@ -4,16 +4,18 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"/>
   <meta name="format-detection" content="telephone=no"/>
-  <link href="../vineyard/css/red-styling.css?v=1.0" rel="stylesheet" media="all"/>
+  <link href="../vineyard/css/shop-styling.css?v=1.0" rel="stylesheet" media="all"/>
   <title>Vineyardred</title>
 </head>
 <div class="vinyardred">
-  <header><a href="../vineyard/vineyardred.html">Vineyardred</a><a href="../vineyard/vineyardwhite.html">VineyardWhite</a><a href="../vineyard/vineyardrose.html">Vinyardrosé</a></header>
+  <header><a class="red-page" href="#">Vineyardred</a><a class="white-page" href="#">VineyardWhite</a><a class="rose-page" href="#">Vinyardrosé</a></header>
   <div class="wrapper">
-    <section id="boxes">
+    <section class="red" id="boxes">
       <div class="container">
         <table class="products-table">
           <tr>
+            <th class="hide">Product Code</th>
+            <th>Category</th>
             <th>Product Name</th>
             <th>Description</th>
             <th>Unit Price</th>
@@ -21,33 +23,39 @@
             <th>Add to cart</th>
           </tr>
           <tr>
+            <td class="hide">001</td>
+            <td>Red</td>
             <td>Red Fluo</td>
             <td>Best in the Country</td>
             <td>50</td>
             <td>
-              <input class="quantity" type="number" value="0"/>
+              <input class="quantity" type="number" min="1"/>
             </td>
             <td>
               <button class="add-button button_1">+</button>
             </td>
           </tr>
           <tr>
+            <td class="hide">002</td>
+            <td>Red</td>
             <td>Red dark</td>
             <td>not bad in the Country</td>
             <td>89</td>
             <td>
-              <input class="quantity" type="number" value="0"/>
+              <input class="quantity" type="number" min="1"/>
             </td>
             <td>
               <button class="add-button button_1">+</button>
             </td>
           </tr>
           <tr>
+            <td class="hide">003</td>
+            <td>Red</td>
             <td>Red invisible</td>
             <td>quite good the Country</td>
             <td>15</td>
             <td>
-              <input class="quantity" type="number" value="0"/>
+              <input class="quantity" type="number" min="1"/>
             </td>
             <td>
               <button class="add-button button_1">+</button>
@@ -55,8 +63,118 @@
           </tr>
         </table>
       </div>
-      <p class="demo" id="demo"></p>
     </section>
+    <section class="white" id="boxes">
+      <div class="container">
+        <table class="products-table">
+          <tr>
+            <th class="hide">Product Code</th>
+            <th>Category</th>
+            <th>Product Name</th>
+            <th>Description</th>
+            <th>Unit Price</th>
+            <th>Quantity</th>
+            <th>Add to cart</th>
+          </tr>
+          <tr>
+            <td class="hide">004</td>
+            <td>White</td>
+            <td>White Grape</td>
+            <td>Best in the Country</td>
+            <td>50</td>
+            <td>
+              <input class="quantity" type="number" min="1"/>
+            </td>
+            <td>
+              <button class="add-button button_1">+</button>
+            </td>
+          </tr>
+          <tr>
+            <td class="hide">005</td>
+            <td>White</td>
+            <td>White Angel</td>
+            <td>not bad in the Country</td>
+            <td>89</td>
+            <td>
+              <input class="quantity" type="number" min="1"/>
+            </td>
+            <td>
+              <button class="add-button button_1">+</button>
+            </td>
+          </tr>
+          <tr>
+            <td class="hide">006</td>
+            <td>White</td>
+            <td>White Oud</td>
+            <td>quite good the Country</td>
+            <td>15</td>
+            <td>
+              <input class="quantity" type="number" min="1"/>
+            </td>
+            <td>
+              <button class="add-button button_1">+</button>
+            </td>
+          </tr>
+        </table>
+      </div>
+    </section>
+    <section class="rose" id="boxes">
+      <div class="container">
+        <table class="products-table">
+          <tr>
+            <th class="hide">Product Code</th>
+            <th>Category</th>
+            <th>Product Name</th>
+            <th>Description</th>
+            <th>Unit Price</th>
+            <th>Quantity</th>
+            <th>Add to cart</th>
+          </tr>
+          <tr>
+            <td class="hide">007</td>
+            <td>Rosé</td>
+            <td>Rosé Fluo</td>
+            <td>Best in the Country</td>
+            <td>50</td>
+            <td>
+              <input class="quantity" type="number" min="1"/>
+            </td>
+            <td>
+              <button class="add-button button_1">+</button>
+            </td>
+          </tr>
+          <tr>
+            <td class="hide">008</td>
+            <td>Rosé</td>
+            <td>Rosé dark</td>
+            <td>not bad in the Country</td>
+            <td>89</td>
+            <td>
+              <input class="quantity" type="number" min="1"/>
+            </td>
+            <td>
+              <button class="add-button button_1">+</button>
+            </td>
+          </tr>
+          <tr>
+            <td class="hide">009</td>
+            <td>Rosé</td>
+            <td>Rosé invisible</td>
+            <td>quite good the Country</td>
+            <td>15</td>
+            <td>
+              <input class="quantity" type="number" min="1"/>
+            </td>
+            <td>
+              <button class="add-button button_1">+</button>
+            </td>
+          </tr>
+        </table>
+      </div>
+    </section>
+    <div class="cartbox">
+      <p></p>
+    </div>
   </div>
   <footer>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>

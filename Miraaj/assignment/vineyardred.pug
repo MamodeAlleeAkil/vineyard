@@ -3,50 +3,143 @@ head
   meta(http-equiv='X-UA-Compatible', content='IE=edge')
   meta(name='viewport', content='width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no')
   meta(name="format-detection" content="telephone=no")
-  link(href='../vineyard/css/red-styling.css?v=1.0', rel='stylesheet', media='all')
+  link(href='../vineyard/css/shop-styling.css?v=1.0', rel='stylesheet', media='all')
   block title
     title Vineyardred
 
 .vinyardred
   header
-    a(href="../vineyard/vineyardred.html") Vineyardred
-    a(href="../vineyard/vineyardwhite.html") VineyardWhite
-    a(href="../vineyard/vineyardrose.html") Vinyardrosé
+    a.red-page(href="#") Vineyardred
+    a.white-page(href="#") VineyardWhite
+    a.rose-page(href="#") Vinyardrosé
   .wrapper
-    section#boxes
+    section.red#boxes
       .container
         table.products-table
           tr
+            th.hide Product Code
+            th Category
             th Product Name
             th Description
             th Unit Price
             th Quantity
             th Add to cart
           tr
+            td.hide 001
+            td Red
             td Red Fluo
             td Best in the Country
             td 50
             td
-              input.quantity(type='number', value='0')
+              input.quantity(type='number', min="1")
             td
               button.add-button.button_1 +
           tr
+            td.hide 002
+            td Red
             td Red dark
             td not bad in the Country
             td 89
             td
-              input.quantity(type='number', value='0')
+              input.quantity(type='number', min="1")
             td
               button.add-button.button_1 +
           tr
+            td.hide 003
+            td Red
             td Red invisible
             td quite good the Country
             td 15
             td
-              input.quantity(type='number', value='0')
+              input.quantity(type='number', min="1")
             td
               button.add-button.button_1 +
-      p.demo#demo
+
+    section.white#boxes
+      .container
+        table.products-table
+          tr
+            th.hide Product Code
+            th Category
+            th Product Name
+            th Description
+            th Unit Price
+            th Quantity
+            th Add to cart
+          tr
+            td.hide 004
+            td White
+            td White Grape
+            td Best in the Country
+            td 50
+            td
+              input.quantity(type='number', min="1")
+            td
+              button.add-button.button_1 +
+          tr
+            td.hide 005
+            td White
+            td White Angel
+            td not bad in the Country
+            td 89
+            td
+              input.quantity(type='number', min="1")
+            td
+              button.add-button.button_1 +
+          tr
+            td.hide 006
+            td White
+            td White Oud
+            td quite good the Country
+            td 15
+            td
+              input.quantity(type='number', min="1")
+            td
+              button.add-button.button_1 +
+
+    section.rose#boxes
+      .container
+        table.products-table
+          tr
+            th.hide Product Code
+            th Category
+            th Product Name
+            th Description
+            th Unit Price
+            th Quantity
+            th Add to cart
+          tr
+            td.hide 007
+            td Rosé
+            td Rosé Fluo
+            td Best in the Country
+            td 50
+            td
+              input.quantity(type='number', min="1")
+            td
+              button.add-button.button_1 +
+          tr
+            td.hide 008
+            td Rosé
+            td Rosé dark
+            td not bad in the Country
+            td 89
+            td
+              input.quantity(type='number',  min="1")
+            td
+              button.add-button.button_1 +
+          tr
+            td.hide 009
+            td Rosé
+            td Rosé invisible
+            td quite good the Country
+            td 15
+            td
+              input.quantity(type='number', min="1")
+            td
+              button.add-button.button_1 +
+    .cartbox
+      p
 
   footer
     script(src='https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js')

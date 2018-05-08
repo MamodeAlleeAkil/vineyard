@@ -59,16 +59,8 @@ $(document).ready(function() {
       hasError = true;
     }
 
-    if(hasError == false && grecaptcha.getResponse().length!==0 && $('input[name=wine]:checked').val()=='red'){
+    if(hasError == false && grecaptcha.getResponse().length!==0){
       location.href = 'vineyardred.html';
-    }
-
-    if(hasError == false && grecaptcha.getResponse().length!==0 && $('input[name=wine]:checked').val()=='white'){
-      location.href = 'vineyardwhite.html';
-    }
-
-    if(hasError == false && grecaptcha.getResponse().length!==0 && $('input[name=wine]:checked').val()=='rosé'){
-      location.href = 'vineyardrosé.html';
     }
 
     $('.error').first().focus();
