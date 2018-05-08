@@ -51,8 +51,8 @@ header a{
 }
 
 header li{
-  float:left;
-  display:inline;
+  float: left;
+  display: inline;
   padding: 0 20px 0 20px;
 }
 
@@ -315,7 +315,7 @@ table {
 }
 
 td, th {
-    border: 1px solid #dddddd;
+    border: 1px solid #b6b6b6;
     text-align: left;
     padding: 8px;
 }
