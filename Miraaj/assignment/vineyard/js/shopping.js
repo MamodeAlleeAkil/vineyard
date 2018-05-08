@@ -1,0 +1,2 @@
+$(document).ready(function(){$(".red_cart").click(function(r){var e;e=$(".quantity").val()*$(".unitPrice").val(),$(".price").val(e);var t=$(".red1 .required").map(function(r){return this.value}).get();alert(t)})});
+//# sourceMappingURL=shopping.js.map

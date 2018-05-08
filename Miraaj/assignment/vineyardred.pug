@@ -13,27 +13,32 @@ head
     a(href="../vineyard/vineyardwhite.html") VineyardWhite
     a(href="../vineyard/vineyardrose.html") Vinyardrosé
   .wrapper
-
-    form
+    - var price = 0;
+    form.red1#red1
       label.category
         p Product Category
-        input(type="text", name="red", value="Red", readonly)
-
+        input.required(type="text", name="red", value="Red", readonly)
+        input.required(type="hidden",value=".......", readonly)
+      label.quantity
+        p Quantity
+        input.required.quantity(type="text")
+        input.required(type="hidden",value=".......@", readonly)
+      label.unit-price
+        p Unit Price
+        input.required.unitPrice(type="text", name="unit price", value="$55", readonly)
+        input.required(type="hidden",value=".......each.......=", readonly)
+        input.required.price(type="hidden", readonly)
       label.p-name
         p Product Name
         input(type="text", name="product_name", value="Name1", readonly)
 
       label.p_description
-        p Email Address
+        p Description
         textarea(rows='4', cols='50', name="description",  readonly) Enta palab goes here...
 
-      label.unit-price
-        p Unit Price
-        input(type="text", name="price", value="$55", readonly)
 
-      label.quantity
-        p Quantity
-        input(type="text")
+
+
       a.btn.red_cart(href="#") Add to cart
 
       a.btn.red_order(href="#") Place Order

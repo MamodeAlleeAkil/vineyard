@@ -1,0 +1,1 @@
+{"version":3,"sources":["..\\..\\shopping.js"],"names":["$","document","ready","click","e","price1","val","arr","map","this","value","get","alert"],"mappings":"AAAAA,EAAAC,UAAAC,MAAA,WACAF,EAAA,aAAAG,MAAA,SAAAC,GACA,IAAAC,EAGAA,EAFAL,EAAA,aAAAM,MACAN,EAAA,cAAAM,MAEAN,EAAA,UAAAM,IAAAD,GACA,IAAAE,EAAAP,EAAA,mBAAAQ,IAAA,SAAAJ,GACA,OAAAK,KAAAC,QACAC,MACAC,MAAAL"}

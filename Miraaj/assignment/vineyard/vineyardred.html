@@ -10,26 +10,30 @@
 <div class="vinyardred">
   <header><a href="../vineyard/vineyardred.html">Vineyardred</a><a href="../vineyard/vineyardwhite.html">VineyardWhite</a><a href="../vineyard/vineyardrose.html">Vinyardrosé</a></header>
   <div class="wrapper">
-    <form>
+    <form class="red1" id="red1">
       <label class="category">
         <p>Product Category</p>
-        <input type="text" name="red" value="Red" readonly="readonly"/>
+        <input class="required" type="text" name="red" value="Red" readonly="readonly"/>
+        <input class="required" type="hidden" value="......." readonly="readonly"/>
+      </label>
+      <label class="quantity">
+        <p>Quantity</p>
+        <input class="required quantity" type="text"/>
+        <input class="required" type="hidden" value=".......@" readonly="readonly"/>
+      </label>
+      <label class="unit-price">
+        <p>Unit Price</p>
+        <input class="required unitPrice" type="text" name="unit price" value="$55" readonly="readonly"/>
+        <input class="required" type="hidden" value=".......each.......=" readonly="readonly"/>
+        <input class="required price" type="hidden" readonly="readonly"/>
       </label>
       <label class="p-name">
         <p>Product Name</p>
         <input type="text" name="product_name" value="Name1" readonly="readonly"/>
       </label>
       <label class="p_description">
-        <p>Email Address</p>
+        <p>Description</p>
         <textarea rows="4" cols="50" name="description" readonly="readonly">Enta palab goes here...</textarea>
-      </label>
-      <label class="unit-price">
-        <p>Unit Price</p>
-        <input type="text" name="price" value="$55" readonly="readonly"/>
-      </label>
-      <label class="quantity">
-        <p>Quantity</p>
-        <input type="text"/>
       </label><a class="btn red_cart" href="#">Add to cart</a><a class="btn red_order" href="#">Place Order</a>
     </form>
   </div>
