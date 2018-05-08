@@ -8,51 +8,38 @@
   <script src='https://www.google.com/recaptcha/api.js'></script>
   <script src="script.js"></script>
 </head>
-<body class="imgb">
-  <header>
-    <div class="container">
-      <div id="branding">
-        <h1><span class="highlight">Vineyard</span></h1>
-      </div>
-    </div>
-  </header>
-  <div class="overlay"></div>
-  <div class="popup">
-    <p>ARE YOU SURE?</p>
-    <a class="btn ok" href="#">OK</a>
-    <a class="btn cancel" href="#">CANCEL</a>
-  </div>
-
+<body>
+<h1 class="main-title">VINEYARD</h1>
 <div class="container-registration">
   <form class="form_credentials" action=products.html>
 
     <label class="first_name" for="fname"><b>First Name</b>
     <input type="text" id="fname" name="firstname" placeholder="Your name..">
-    <p class="error_message">This field is incorrect</p>
+    <p class="error_message">First Name field is incorrect</p>
     </label>
     <br/>
 
     <label  class="surname" for="sname"><b>Surname</b>
     <input type="text" id="sname" name="surname" placeholder="Your Surname..">
-    <p class="error_message">This field is incorrect</p>
+    <p class="error_message">Surname field is incorrect</p>
     </label>
     <br/>
 
     <label class="number" for="mobile"><b>Mobile Phone</b>
     <input type="number" id="mobile" name="mobile" min="10000000" max="99999999" placeholder="Your Mobile Phone Number..">
-    <p class="error_message">This field is incorrect</p>
+    <p class="error_message">Mobile Phone field is incorrect</p>
     </label>
     <br/>
 
     <label for="email" class="email"><b>Email</b>
     <input type="text" id="email" name="email" placeholder="Your email.." >
-    <p class="error_message">This field is incorrect</p>
+    <p class="error_message">Email field is incorrect</p>
     </label>
     <br/>
 
     <label class="nic" for="nic"><b>NIC</b>
     <input type="text" id="nic" name="nic" placeholder="Your NIC..">
-    <p class="error_message">This field is incorrect</p>
+    <p class="error_message">NIC field is incorrect</p>
     </label>
 
     <label class="wine" for="wine-type-preference"><b>Wine Type Preference</b>
@@ -93,16 +80,8 @@
 
     <label class="country" for="country"><b>Country</b>
     <select id="country" name="country">
-      <option value="mauritius">Mauritius</option>
-      <option value="canada">Canada</option>
-      <option value="usa">USA</option>
-      <option value="australia">Australia</option>
-      <option value="dubai">Dubai</option>
-      <option value="uk">UK</option>
-      <option value="china">China</option>
-      <option value="france">France</option>
-      <option value="brazil">Brazil</option>
-      <option value="mexico">Mexico</option>
+      <option value="mauritius">Rodrigues</option>
+      <option value="canada">Reunion</option>
     </select>
     </label>
 
@@ -124,14 +103,6 @@
     <p class="error_message">This field is incorrect</p>
     </label>
     <br/>
-
-    <!-- <div class="g-recaptcha" data-sitekey="6LcbHlgUAAAAALYcyJCiXI6ZYMzgFAQMXdoup1rX"></div> -->
-    <br/>
-<!-- <div class="buttons">
-  <a class="btn register" href="#">Register</a>
-  <a class="btn reset" href="#">Reset</a>
-</div> -->
-
 
     <button id="submit-btn" class="form-button register registerbtn" type="submit"><b>Register</b></button>
     <button class="form-button resetbtn" type="reset"><b>Reset</b></button>

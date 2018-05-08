@@ -54,14 +54,14 @@ $(document).ready(function() {
       hasError = true;
     }
 
-    if(grecaptcha.getResponse().length==0){
-      $('.g-recaptcha').addClass('error');
-      hasError = true;
-    }
+    // if(grecaptcha.getResponse().length==0){
+    //   $('.g-recaptcha').addClass('error');
+    //   hasError = true;
+    // }
 
-    if(hasError == false && grecaptcha.getResponse().length!==0){
-      location.href = 'vineyardred.html';
-    }
+    // if(hasError == false && grecaptcha.getResponse().length!==0){
+    //   location.href = 'vineyardred.html';
+    // }
 
     $('.error').first().focus();
 
@@ -127,7 +127,7 @@ $(document).ready(function() {
     $('.form_credentials input').val('').removeClass('error');
     $('.overlay, .popup').hide();
     $('.error_message').hide();
-    $('.g-recaptcha').removeClass('error');
+    // $('.g-recaptcha').removeClass('error');
   });
 
   $('.cancel').click(function(e){

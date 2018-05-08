@@ -15,53 +15,209 @@
         </div>
         <nav>
           <ul>
-            <li class="current"><a href="#">Cart</a></li>
+            <li class="current"><a class="red-page" href="#">Vineyard red</a></li>
+            <li class="current"><a class="white-page" href="#">Vineyard White</a></li>
+            <li class="current"><a class="rose-page" href="#">Vinyard rosé</a></li>
           </ul>
         </nav>
       </div>
     </header>
 
-    <section id="boxes">
-      <div class="container">
-        <table class="products-table">
-          <tr>
-            <th>Product Name</th>
-            <th>Description</th>
-            <th>Unit Price</th>
-            <th>Quantity</th>
-            <th>Add to cart</th>
+    <div class="wrapper">
 
-          </tr>
+      <section class="red" id="boxes">
+        <div class="container">
+          <table class="products-table">
             <tr>
-              <td>Red Fluo</td>
-              <td>Best in the Country</td>
+              <th class="hide">Product Code</th>
+              <th>Category</th>
+              <th>Product Name</th>
+              <th>Description</th>
+              <th>Unit Price</th>
+              <th>Quantity</th>
+              <th>Add to cart</th>
+            </tr>
+            <tr>
+              <td class="hide">001</td>
+              <td>Red</td>
+              <td>Cabernet Franc</td>
+              <td>Along with Cabernet Sauvignon and Merlot, Cabernet Franc is part of the essential blending triad that makes up the majority
+              of the Bordeaux blend (and Meritage) red wines produced in the United States. On its own, Cabernet Franc is a more tannic,
+              earthy cousin to Cabernet Sauvignon. In warmer sites outside of Europe, its most distinctive attributes are its pure notes
+              of violets and blueberry, and its ripe tannins often carry the scent of fresh roasted coffee. It is made (though rarely labeled)
+              as a varietal in Chinon, Bourgueil, and Saumur-Champigny, where it is hard and tannic and can evoke an austere minerality.
+              In Pomerol and Saint-Émilion it is featured in blends with Merlot, adding a spicy, pungent, sometimes minty note.</td>
               <td>50</td>
-              <td><input type="number" class="quantity" value="0"></td>
+              <td>
+                <input class="quantity" type="number" min="1" />
+              </td>
               <td>
                 <button class="add-button button_1">+</button>
               </td>
             </tr>
             <tr>
-              <td>Red dark</td>
-              <td>not bad in the Country</td>
-              <td>89</td>
-              <td><input type="number" class="quantity" value="0"></td>
+              <td class="hide">002</td>
+              <td>Red</td>
+              <td>Cabernet Sauvignon</td>
+              <td>The primary component of great Bordeaux and the defining grape of the Napa Valley, Cabernet Sauvignon is grown all over the
+              world, but rarely achieves greatness. It ripens late and can be quite weedy and even vegetal in cooler climate regions such
+              as Chile. In Bordeaux and Tuscany it is almost always blended to soften its intensely astringent tannins. The Napa style
+              is dense, purple-black, jammy and tasting of currants and black cherries. Thick and ripe, layered with expensive new oak
+              scents and flavors, it has almost single-handedly created the phenomenon of the cult wineries. In Washington, the best Cabernet
+              straddles the border between the ripeness of California versions and the nuanced herb, leaf, and olive flavors of great Bordeaux.</td>
+              <td>389</td>
+              <td>
+                <input class="quantity" type="number" min="1" />
+              </td>
               <td>
                 <button class="add-button button_1">+</button>
               </td>
             </tr>
             <tr>
-              <td>Red invisible</td>
-              <td>quite good the Country</td>
-              <td>15</td>
-              <td><input type="number" class="quantity" value="0"></td>
+              <td class="hide">003</td>
+              <td>Red</td>
+              <td>Gamay</td>
+              <td>The grape of Beaujolais, Gamay is often made to be drunk quite young, and shows bright, tangy, fruit-driven flavors of strawberry,
+              raspberry, and sweet cherries. When made by the method known as carbonic maceration, young Gamay has a slight effervescence
+              and a distinct smell of bananas. Beaujolais Nouveau, released each year shortly after harvest, is the most famous example.</td>
+              <td>175</td>
+              <td>
+                <input class="quantity" type="number" min="1" />
+              </td>
               <td>
                 <button class="add-button button_1">+</button>
               </td>
             </tr>
-        </table>
+          </table>
+        </div>
+      </section>
+      <section class="white" id="boxes">
+        <div class="container">
+          <table class="products-table">
+            <tr>
+              <th class="hide">Product Code</th>
+              <th>Category</th>
+              <th>Product Name</th>
+              <th>Description</th>
+              <th>Unit Price</th>
+              <th>Quantity</th>
+              <th>Add to cart</th>
+            </tr>
+            <tr>
+              <td class="hide">004</td>
+              <td>White</td>
+              <td>Sutter Home</td>
+              <td>The Sutter Home is a reliable and one of the most trusted white wine brands in the world. The company has been operating
+              since 1800s from the times when a Swiss-German immigrant established a small winery and distillery in Napa Valley. This company
+              has created White Zinfandel in the early 1970s, and has brought forward various affordable white wines including Pink Moscato,
+              Bubbly Moscato, Bubbly Pink Moscato, Sweet White and Pinot Noir.</td>
+              <td>500</td>
+              <td>
+                <input class="quantity" type="number" min="1" />
+              </td>
+              <td>
+                <button class="add-button button_1">+</button>
+              </td>
+            </tr>
+            <tr>
+              <td class="hide">005</td>
+              <td>White</td>
+              <td>Beringer</td>
+              <td>The Beringer has been a great and one of the most successful white wine brands. It has been known for its 2009 Knights Valley
+              Cabernet Sauvignon and 2009 Private Reserve Cabernet Sauvignon. Beringer Vineyards was founded in 1875 and is one of the
+              oldest wine brands.</td>
+              <td>897</td>
+              <td>
+                <input class="quantity" type="number" min="1" />
+              </td>
+              <td>
+                <button class="add-button button_1">+</button>
+              </td>
+            </tr>
+            <tr>
+              <td class="hide">006</td>
+              <td>White</td>
+              <td>Blossom Hill</td>
+              <td>The Blossom Hill is best known for its soft and fruity red wines, crispy and fruity white wines, and tastes of Blossom Hill
+              Vineyard Collection, Blossom Hill Winemakers Reserve Pinot Grigio, Chardonnay, Sauvignon Blanc, Chenin Blanc, Merlot, Cabernet
+              Sauvignon, Blossom Hill White Zinfandel and White Grenache. This company is known for its occasional and special wine tastes.
+              It makes sure the superior quality of its white wines.</td>
+              <td>156</td>
+              <td>
+                <input class="quantity" type="number" min="1" />
+              </td>
+              <td>
+                <button class="add-button button_1">+</button>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </section>
+      <section class="rose" id="boxes">
+        <div class="container">
+          <table class="products-table">
+            <tr>
+              <th class="hide">Product Code</th>
+              <th>Category</th>
+              <th>Product Name</th>
+              <th>Description</th>
+              <th>Unit Price</th>
+              <th>Quantity</th>
+              <th>Add to cart</th>
+            </tr>
+            <tr>
+              <td class="hide">007</td>
+              <td>Rosé</td>
+              <td>Chêne Bleu Rosé</td>
+              <td>As temperatures rise, you’ll want to turn to this Provençal pink to cool you down. With a well-structured body and a refreshing
+              crisp finish, expect notes of summer berries, and juicy citrus. This traditional vineyard hand pick all the grapes that go
+              into each bottle, believing a low-intervention approach results in the most delicious wine.</td>
+              <td>508</td>
+              <td>
+                <input class="quantity" type="number" min="1" />
+              </td>
+              <td>
+                <button class="add-button button_1">+</button>
+              </td>
+            </tr>
+            <tr>
+              <td class="hide">008</td>
+              <td>Rosé</td>
+              <td>Massaya Rosé</td>
+              <td>One of the most exciting rosés we’ve tried is this Massaya from Lebanon. It’s a blend of syrah and cabernet grapes, which
+              creates a Southern French style, but with the addition of a light spicy note. The vineyard is located 1,800 metres above
+              sea level, making it one of the highest in the world.</td>
+              <td>869</td>
+              <td>
+                <input class="quantity" type="number" min="1" />
+              </td>
+              <td>
+                <button class="add-button button_1">+</button>
+              </td>
+            </tr>
+            <tr>
+              <td class="hide">009</td>
+              <td>Rosé</td>
+              <td>Fortnum & Mason Sancerre Rosé, Andre Dezat</td>
+              <td>Sancerre is known for its crisp, light and fresh taste – exactly what you want to drink in the sun. This elegant version
+              from Fortnum & Mason uses red pinot noir grapes, which results in a juicy strawberry flavour profile. A lovely option if
+              you’re looking to impress your hosts.</td>
+              <td>153</td>
+              <td>
+                <input class="quantity" type="number" min="1" />
+              </td>
+              <td>
+                <button class="add-button button_1">+</button>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </section>
+      <h1 class="cart-title">Cart</h1>
+      <div class="cartbox container">
+        <p></p>
       </div>
-    </section>
+    </div>
 
     <footer>
       <p>Vineyard, Copyright &copy; 2018</p>

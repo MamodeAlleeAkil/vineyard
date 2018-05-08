@@ -2,14 +2,24 @@ body{
   font: 15px/1.5 Arial, Helvetica,sans-serif;
   padding:0;
   margin:0;
-  background-color:#f4f4f4;
+  background-color:#dfdfdf;
 }
 
 /* Global */
+.wrapper {
+  display: flex;
+}
 .container{
   width:80%;
   margin:auto;
   overflow:hidden;
+}
+
+.main-title {
+  color: #b41800;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 15px;
 }
 
 ul{
@@ -19,11 +29,13 @@ ul{
 
 .button_1{
   height:38px;
-  background:#e8491d;
+  width: 70px;
+  background:#1de838;
   border:0;
   padding-left: 20px;
   padding-right:20px;
   color:#ffffff;
+  border-radius: 15px;
 }
 
 .dark{
@@ -36,11 +48,10 @@ ul{
 
 /* Header **/
 header{
-  background:#35424a;
+  background:#4e0000;
   color:#ffffff;
-  padding-top:30px;
-  min-height:70px;
-  border-bottom:#e8491d 3px solid;
+  padding-top:10px;
+  min-height:30px;
 }
 
 header a{
@@ -79,45 +90,13 @@ header a:hover{
   font-weight:bold;
 }
 
-/* Showcase */
-#showcase{
-  min-height:400px;
-  background:url('img/wine.jpg') no-repeat 0 -400px;
-  text-align:center;
-  color:#ffffff;
-}
 
-#showcase h1{
-  margin-top:100px;
-  font-size:55px;
-  margin-bottom:10px;
-}
 
-#showcase p{
-  font-size:20px;
-}
 
-/* Newsletter */
-#newsletter{
-  padding:15px;
-  color:#ffffff;
-  background:#35424a
-}
 
-#newsletter h1{
-  float:left;
-}
 
-#newsletter form {
-  float:right;
-  margin-top:15px;
-}
 
-#newsletter input[type="email"]{
-  padding:4px;
-  height:25px;
-  width:250px;
-}
+
 
 /* Boxes */
 #boxes{
@@ -135,32 +114,13 @@ header a:hover{
   width:90px;
 }
 
-/* Sidebar */
-aside#sidebar{
-  float:right;
-  width:30%;
-  margin-top:10px;
-}
-
-aside#sidebar .quote input, aside#sidebar .quote textarea{
-  width:90%;
-  padding:5px;
-}
-
 /* Main-col */
 article#main-col{
   float:left;
   width:65%;
 }
 
-/* Services */
-ul#services li{
-  list-style: none;
-  padding:20px;
-  border: #cccccc solid 1px;
-  margin-bottom:5px;
-  background:#e6e6e6;
-}
+
 
 footer{
   padding:20px;
@@ -224,7 +184,7 @@ input[type=text], input[type=number], input[type=password], select, textarea {
 
 /* Style the submit button with a specific background color etc */
 input[type=submit] {
-    background-color: #4CAF50;
+    background-color: rgb(163, 177, 164);
     color: white;
     padding: 12px 20px;
     border: none;
@@ -234,15 +194,15 @@ input[type=submit] {
 
 /* When moving the mouse over the submit button, add a darker green color */
 input[type=submit]:hover {
-    background-color: #45a049;
+    background-color: #88a089;
 }
 
 /* Add a background color and some padding around the form */
 .container-registration {
     border-radius: 5px;
-    background-color: #f2f2f2;
+    background-color: #fff0e7;
     padding: 20px;
-    max-width: 800px;
+    max-width: 500px;
     width: 100%;
     margin: 10px auto;
 }
@@ -254,7 +214,7 @@ input[type=submit]:hover {
 }
 
 button {
-    background-color: #4CAF50;
+    background-color: rgb(101, 114, 101);
     color: white;
     padding: 14px 20px;
     margin: 8px 0;
@@ -369,6 +329,7 @@ table {
     font-family: arial, sans-serif;
     border-collapse: collapse;
     width: 100%;
+    margin-bottom: 20px;
 }
 
 td, th {
@@ -400,15 +361,15 @@ tr:nth-child(even) {
 .cartbox {
   max-height: 500px;
   min-height: 100px;
-  max-width: 500px;
-  width: 100%;
+  width: 500px;
   border: 3px solid #b6b6b6;
   margin-top: 5px;
   border-radius: 5px;
+  margin-right: 20px;
 }
 
 .cart-title {
-  color: #e8491d;
+  color: #5c1400;
   font-weight: bold;
   text-align: center;
   margin-bottom: 5px;
