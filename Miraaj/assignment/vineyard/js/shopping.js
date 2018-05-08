@@ -1,2 +1,2 @@
-$(document).ready(function(){$(".red_cart").click(function(r){var e;e=$(".quantity").val()*$(".unitPrice").val(),$(".price").val(e);var t=$(".red1 .required").map(function(r){return this.value}).get();alert(t)})});
+$(document).ready(function(){$(".red_cart").click(function(r){var e,t=$(".quantity").val(),a=parseInt($(".unitPrice").val());e=parseInt(t*a),$(".price").val(e);var n=$(".red1 .required").map(function(r){return this.value}).get();alert(t),alert(a),alert(e),alert(n)})});
 //# sourceMappingURL=shopping.js.map
