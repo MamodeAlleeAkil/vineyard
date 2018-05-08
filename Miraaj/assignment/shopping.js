@@ -1,16 +1,14 @@
 $(document).ready(function() {
-  $('.red_cart').click(function(e){
-    var price1=0;
-    var quantity = $('.quantity').val();
-    var unitPrice = parseInt($('.unitPrice').val());
-    price1 = parseInt(quantity * unitPrice);
-    $('.price').val(price1);
-    var arr = $('.red1 .required').map(function(e){
-      return this.value;
-    }).get();
-    alert(quantity);
-    alert(unitPrice);
-    alert(price1);
-    alert(arr);
-  });
+
+  // $("#myTable").on('click','.btnSelect',function(){
+  //   // get the current row
+  //   var currentRow=$(this).closest("tr");
+
+  //   var col1=currentRow.find("td:eq(0)").text(); // get current row 1st TD value
+  //   var col2=currentRow.find("td:eq(1)").text(); // get current row 2nd TD
+  //   var col3=currentRow.find("td:eq(2)").text(); // get current row 3rd TD
+  //   var data=col1+"\n"+col2+"\n"+col3;
+
+  //   alert(data);
+  // });
 });

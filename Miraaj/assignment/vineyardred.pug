@@ -13,36 +13,36 @@ head
     a(href="../vineyard/vineyardwhite.html") VineyardWhite
     a(href="../vineyard/vineyardrose.html") Vinyardrosé
   .wrapper
-    - var price = 0;
-    form.red1#red1
-      label.category
-        p Product Category
-        input.required(type="text", name="red", value="Red", readonly)
-        input.required(type="hidden",value=".......", readonly)
-      label
-        p Quantity
-        input.required.quantity(type="text")
-        input.required(type="hidden",value=".......@", readonly)
-      label.unit-price
-        p Unit Price
-        input.required.unitPrice(type="text", name="unit price", value="55", readonly)
-        input.required(type="hidden",value=".......each.......=", readonly)
-        input.required.price(type="hidden", readonly)
-      label.p-name
-        p Product Name
-        input(type="text", name="product_name", value="Name1", readonly)
-
-      label.p_description
-        p Description
-        textarea(rows='4', cols='50', name="description",  readonly) Enta palab goes here...
-
-
-
-
-      a.btn.red_cart(href="#") Add to cart
-
-      a.btn.red_order(href="#") Place Order
-
+    section.section-table
+      .container
+        table#table-info
+          tr.row1
+            th.cell Product Name
+            th Description
+            th Unit Price
+            th Quantity
+            th Add to cart
+          tr
+            td asdasd
+            td asdasd
+            td asdasd
+            td asdasd
+            td
+              button +
+          tr
+            td asdasd
+            td asdasd
+            td asdasd
+            td asdasd
+            td
+              button +
+          tr
+            td asdasd
+            td asdasd
+            td asdasd
+            td asdasd
+            td
+              button +
 
   footer
     script(src='https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js')
