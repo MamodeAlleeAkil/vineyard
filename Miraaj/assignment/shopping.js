@@ -14,6 +14,10 @@ $(document).ready(function() {
     var a = [];
     a.push(data);
     document.getElementById("demo").innerHTML = a;
+    localStorage.setItem("first", JSON.stringify(a));
+    var retrievedData = localStorage.getItem("first");
+    var movies2 = JSON.parse(retrievedData);
+    alert(movies2);
     alert(data);
   });
 });
